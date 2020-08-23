@@ -18,7 +18,7 @@
             android:layout_marginEnd="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/checkboxMarked"
             app:layout_constraintTop_toTopOf="parent">
 
         </TextView>
@@ -34,6 +34,18 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
 
         </TextView>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkboxMarked"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/textViewDescription"
+            app:layout_constraintTop_toTopOf="@id/textViewTitle "
+            ></CheckBox>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
